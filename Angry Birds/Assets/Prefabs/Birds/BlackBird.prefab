@@ -134,10 +134,12 @@ MonoBehaviour:
   Parent: {fileID: 0}
   RigidBody: {fileID: 4704865829754982433}
   Collider: {fileID: 4704865829754982432}
-  bombArea: 2
-  force: 500
+  bombArea: 1
+  force: 300
   LayertoHit:
     serializedVersion: 2
     m_Bits: 256
   _hasBomb: 0
-  ExplosionEffect: {fileID: 100008, guid: 8f611da60097c85438a2947021f045cf, type: 3}
+  ExplosionEffect: {fileID: 3657300168730470764, guid: 41f43bd5c6d2c784fa985668104ae707,
+    type: 3}
+  circleCollider: {fileID: 4704865829754982432}

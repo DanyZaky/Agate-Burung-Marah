@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
 
     private bool _isGameEnded = false;
 
-    private bool EnemyAda = true;
+    public bool EnemyAda = true;
     public GameObject WinPanel, LosePanel, PauseButton;
 
     void Start()
@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour
             LosePanel.SetActive(true);
             PauseButton.SetActive(false);
             Debug.Log("LOSE");
+            AudioManager.Instance.PlaySFX("lose");
         }
     }
 
@@ -88,6 +89,7 @@ public class GameController : MonoBehaviour
         {
             _isGameEnded = true;
             Debug.Log("WIN");
+            AudioManager.Instance.PlaySFX("win");
             WinPanel.SetActive(true);
             PauseButton.SetActive(false);
         }

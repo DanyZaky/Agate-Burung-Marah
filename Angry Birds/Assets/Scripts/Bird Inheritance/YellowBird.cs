@@ -15,6 +15,7 @@ public class YellowBird : Bird
             RigidBody.AddForce(RigidBody.velocity * _boostForce);
             _hasBoost = true;
             Debug.Log("BOSSSSSSSRRR");
+            AudioManager.Instance.PlaySFX("yellow bird");
         }
     }
 
